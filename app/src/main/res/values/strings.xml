@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="play_button_desc">Play button</string>
+    <string name="pause_button_desc">Pause button</string>
+    <string name="prev_button_desc">Previous button</string>
+    <string name="next_button_desc">Next button</string>
+    <string name="my_music_app">My Music App</string>
+    <string name="prev">Prev</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next">Next</string>
+
+</resources>
