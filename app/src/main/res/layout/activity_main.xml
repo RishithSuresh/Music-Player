@@ -2,6 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_image"
     android:padding="16dp">
 
     <!-- App Title -->
@@ -10,18 +11,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:text="@string/my_music_app"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
 
+
     <!-- ListView for Songs -->
+
     <ListView
         android:id="@+id/songListView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_below="@id/appTitle"
         android:layout_above="@+id/progressBar"
+        android:background="@drawable/album_placeholder"
         android:divider="@color/white"
         android:dividerHeight="1dp" />
 
@@ -37,37 +42,54 @@
         android:max="100"
         android:progressDrawable="@drawable/progress_bar_custom" />
 
+
     <!-- Button Controls -->
     <LinearLayout
         android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginTop="16dp">
 
         <Button
             android:id="@+id/prevButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
+            android:text="@string/prev"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp" />
 
         <Button
             android:id="@+id/playButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
+            android:text="@string/play"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp" />
 
         <Button
             android:id="@+id/pauseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
+            android:text="@string/pause"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp" />
 
         <Button
             android:id="@+id/nextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
-            android:textColor="@color/white" />
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp" />
+
 
     </LinearLayout>
 </RelativeLayout>
+

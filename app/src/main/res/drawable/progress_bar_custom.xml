@@ -3,7 +3,7 @@
     <item android:id="@android:id/background">
         <shape>
             <corners android:radius="8dp" />
-            <solid android:color="#f3f3f3" /> <!-- Light Gray -->
+            <solid android:color="#f3f3f3" /> 
         </shape>
     </item>
 
@@ -12,7 +12,7 @@
         <clip>
             <shape>
                 <corners android:radius="8dp" />
-                <solid android:color="#6750a4" /> <!-- Mint Green -->
+                <solid android:color="#6750a4" />
             </shape>
         </clip>
     </item>
